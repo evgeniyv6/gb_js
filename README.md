@@ -1,2 +1,4 @@
-# gb_js
-geekbrains javascript one
+### Geekbrains javascript course
+
+### Exercises:
+- **1**
