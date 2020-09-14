@@ -31,7 +31,7 @@ function chk_images(products) {
 	let result = products.filter(function(imgs) {
 		return (Array.isArray(imgs.photos) && imgs.photos.length > 0);
 	});
-	return result
+	return result;
 }
 
 
@@ -43,13 +43,13 @@ function buble_sort_prices(products) {
 	while (count < n) {
 		for (let i=0; i < n-1-count;i++) {
 			if (products[i].price > products[i+1].price) {
-				let tmp = products[i]
-				products[i] = products[i+1]
-				products[i+1] = tmp
+				let tmp = products[i];
+				products[i] = products[i+1];
+				products[i+1] = tmp;
 			}
 
 		}
-		count++
+		count++;
 	}
 	return products;
 }
